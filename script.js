@@ -51,6 +51,8 @@ console.log(frutas, copia);
     // or create a new array and concat the old one in
     const team3 = [].concat(players);
     const copia3 = [].concat(frutas);
+    const tretre = (players.concat(frutas));
+    console.log(tretre);
 
     // or use the new ES6 Spread
     const team4 = [...players];
@@ -119,10 +121,69 @@ console.log(frutas, copia);
         facebook: 'leonardo.developer'}
     }
 
-    console.clear();
+    // console.clear();
     console.log(wes);
 
    const dev = Object.assign({}, wes);
    const dev1 = Object.assign({}, leo);
 
-    const dev2 = JSON.parse(JSON.stringify(wes));
+   const dev2 = JSON.parse(JSON.stringify(wes));
+
+  
+  const casa = ['puerta', 'ventana', 'techo', 'piso', 'pared'];
+
+  const patio = ['piscina', 'jardin', 'arboles', 'mascotas', 'parrilla'];
+
+  const copiaCasa = casa;
+  console.log(casa, copiaCasa);
+
+  const copiaPAtio = patio;
+  console.log(patio, copiaPAtio);
+
+  const copiaCasa2 = [...casa];
+  console.log(copiaCasa2);
+
+  const copiaPAtio2 = [...patio];
+  console.log(copiaPAtio2);
+
+  const copiaCasa3 = Array.from(casa);
+  console.log(copiaCasa3);
+
+  const copiaPAtio3 = Array.from(patio);
+  console.log(copiaPAtio3);
+
+  const copiaCasa4 = casa.slice(2, 5);
+  console.log(copiaCasa4);
+  
+  const copiaPAtio4 = patio.slice(2, 5);
+  console.log(copiaPAtio4);
+
+  casa[6] = 'ninos';
+  casa[5] = 'mascotas';
+  patio[5] = 'manguera';
+  patio[6] = 'parrilla';
+  console.log(casa, patio)
+
+  const copiaCasa5 = Object.assign({}, casa);
+  console.log(copiaCasa5);
+
+  const copiaTodo = (casa.concat(patio));
+  console.log(copiaTodo);
+
+  const arreglo = Object.assign({}, copiaTodo);
+  console.log(arreglo);
+
+
+  const filtro = copiaTodo.filter(todo => (todo === 'mascotas'));
+  console.log(filtro);
+
+  let find = copiaTodo.find(todo => (todo === 'mascotas'));
+  console.log(find);
+
+  let findindex = copiaTodo.findIndex(todo => (todo === 'mascotas'));
+  console.log(findindex);
+
+  var o1 = { a: 1 };
+var o2 = { b: 2 };
+var o3 = { c: 3 };
+
